@@ -6,7 +6,7 @@ const Posts = () => {
   const { data, error, isLoading } = useGetPostsQuery();
   return (
     <div className="container mx-auto">
-      <h2 className="underline">Posts</h2>
+      <h2 className="underline font-bold">Posts</h2>
       {data?.map((post) => (
         <JsonData data={post} />
       ))}
